@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Spot</title>
+    <link rel="stylesheet" href="./styles/card.css">
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/blog-post.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: rgb(238, 238, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-nav">
+        <div class="subscribe">
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+        <div class="title">
+            <h1 class="title-txt">Blog<span style="color:rgb(129, 129, 48)"> SPOT</span></h1>
+        </div>
+        <div class="right-section">
+            <img src="./assets/icons/search.svg" class="search-btn">
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+
+    <div class="category">
+        <ul class="category-list">
+            <li>World</li>
+            <li>U.S.</li>
+            <li>Technology</li>
+            <li>Design</li>
+            <li>Culture</li>
+            <li>Business</li>
+            <li>Politics</li>
+            <li>Opinion</li>
+            <li>Science</li>
+            <li>Health</li>
+            <li>Style</li>
+            <li>Travel</li>
+        </ul>
+    </div>
+
+
+    <div class="banner-container">
+        <div class="banner-content">
+            <div class="banner-topic">
+                <p class="banner-title">
+                    5 NBA Finals takeaways so far from Celtics-Mavericks
+                </p>
+                <p class="banner-description">
+                    The Boston Celtics were a heavy favorite entering the 2024 NBA Finals against the Dallas Mavericks,
+                    and through two games they’ve cemented the idea that they’re the better team. The Celtics proved
+                    they could deliver an early knockout punch in Game 1, when they blitzed the Mavs from the opening
+                    tip and turned the game into a rout before halftime. In Game 2, the Celtics showed that they can win
+                    even when they’re not having their best offensive night.
+                </p>
+                <p class="banner-continue">
+                    Continue reading...
+                </p>
+            </div>
+            <div class="banner-image">
+                <img src="./assets/images/nba.webp" class="ban-img">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h3 class="card-topic">Music</h3>
+                <p class="card-title">How Shaboozey Channeled Zach Bryan and Pharrell Williams to Make ‘A Bar Song
+                    (Tipsy)’</p>
+                <p class="date">Nov 12</p>
+                <p class="card-description">On this episode of The Breakdown, the rising star talks about the hit that
+                    topped the charts and made history</p>
+                <p class="card-author">By Deepesh</p>
+                <p class="continue">Continue reading</p>
+            </div>
+            <div class="thumbnail">
+                <img src="./assets/images/post1.webp" class="image">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3 class="card-topic">World</h3>
+                <p class="card-title">Can Apple Think Different on A.I.?</p>
+                <p class="date">Jun 10</p>
+                <p class="card-description">Wall Street and Silicon Valley will be watching the company’s developers
+                    conference closely for signs of whether the iPhone maker can finally catch up on artificial
+                    intelligence.</p>
+                <p class="card-author">By Andrew Ross Sorkin, Ravi Mattu, Bernhard Warner, Sarah Kessler, Michael J. de
+                    la Merced, Lauren Hirsch, Ephrat Livni and Vivienne Walt</p>
+                <p class="continue">Continue reading</p>
+            </div>
+            <div class="thumbnail">
+                <img src="./assets/images/post2.webp" class="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="create-your-blog">
+        <div class="form-container">
+            <h1 class="create-blog">Create your blog!</h1>
+            <div class="form-content">
+                <label for="Heading" id="head-label">Heading</label><br><br>
+                <input type="text" placeholder="heading" id="heading-input"><br><br>
+                <label for="author">Author Name</label><br><br>
+                <input type="text" id="author" placeholder="enter your name"><br><br>
+                <label for="Type" id="head-label">Type your ideas</label><br><br>
+                <textarea id="blog" name="blog" rows="10" cols="80"></textarea><br>
+
+                <button type="submit" class="sub-btn" id="submit" onclick="postBlog()">Post!</button>
+            </div>
+        </div>
+        <div class="blog-result">
+            <h1 id="blog-heading"></h1>
+            <p id="date"></p>
+            <p id="blog-author"></p>
+            <p id="blog-post"></p>
+        </div>
+    </div>
+    <div class="blog-container">
+        <div class="blog-content">
+            <div class="blog">
+                <h1 class="blog-title">Email for Business Communication: How to Secure Your Information?</h1>
+                <p class="blog-date">Date: 9 June 2024 <span id="blog-author">Jacob</span></p>
+                <p class="blog-desc">Over the past several years, KSHMR has established himself as a dominant force in
+                    modern EDM. Keeping a tight release schedule paired with countless performances all year round, as
+                    well as giving back to the producer community with his massive Sounds of KSHMR sample packs, the
+                    producer (real name Niles Hollowell-Dhar) definitely knows to keep busy. </p>
+                <p class="blog-desc">This interesting article on Bloomberg talks about how much time we spend in
+                    meetings daily, and guess what? Very often we dedicate more than 2 hours a day which actually can be
+                    more than most workers need. Now, luckily, after moving the majority of daily meetings to Zoom and
+                    Google Meets, a lot of tension is released, because virtual meetings do not require one to sit still
+                    and literally stop working for hours. You can join the meeting by opening it on the first half of
+                    your desktop and leaving the rest of the space for other tasks to be done simultaneously. </p>
+
+                <img src="./assets/images/cyber.webp" class="blog-img">
+                <p class="blog-desc">However, as every convenience comes with a price, online communication too has some
+                    pitfalls for businesses that value the importance of digital safety. No company can afford to be
+                    indifferent about this issue in times when cyber attacks and information leaks are so frequent, even
+                    for tech giants like Google and Microsoft.</p>
+            </div>
+            <div class="blog-one">
+                <h1 class="blog-title">
+                    KSHMR ON "DEVIL INSIDE ME," STORYTELLING THROUGH MUSIC, AND MORE</h1>
+                <p class="blog-date">Date: 9 June 2024 <span id="blog-author">Chris</span></p>
+                <p class="blog-desc">Business communication in today’s world is closely attached to the global context
+                    of communication. What we mean is that especially after the global COVID pandemic, when companies
+                    adapted to the digitized world and started working remotely or in a hybrid mode, the face of their
+                    communication changed accordingly.</p>
+                <img src="./assets/images/kshmr.webp" class="blog-img">
+                <ul>
+                    <li>KSHMR recently announced the launch of his Dharma website, which will give his homonymous record
+                        label a brand new direction</li>
+                    <li>In 2019, he has also collaborated with the likes of Krewella, Timmy Trumpet, Luciana and more.
+                    </li>
+                    <li>KSHMR's fans will experience his next performance at Airbeat One in Germany, a festival that
+                        revamps itself with a different theme every year.</li>
+                </ul>
+                <p class="blog-desc">
+                    For me, story and music go hand in hand. I see a story in my mind when I listen to great songs.
+                    Whenever I'm making a song, I'm trying to break through to that moment when a story begins to
+                    appear. For my live show, I can actually show people a story, fully animated with an original score
+                    that weaves in and out of the music. It's special and important to me.
+                </p>
+            </div>
+            <button class="old-btn">Older</button>
+            <button class="new-btn">Newer</button>
+        </div>
+        <div class="about">
+            <div class="about-content">
+                <div class="about-desc">
+                    <h1 class="about-title">About</h1>
+                    <p class="about-txt">Welcome to my blog! Here, I share insights, tips, and experiences on web
+                        development, AI-generated music, and creative projects. Join me on this journey as we explore
+                        the latest trends, tools, and technologies in the digital world. Happy reading!</p>
+                </div>
+                <div class="archives">
+                    <h1 class="archive-title">Archive</h1>
+                    <a href="" class="link">March 2024</a><br>
+                    <a href="" class="link">June 2024</a><br>
+                    <a href="" class="link">January 2024</a><br>
+                    <a href="" class="link">December 2023</a><br>
+                    <a href="" class="link">April 2024</a><br>
+                    <a href="" class="link">May 2024</a><br>
+                    <a href="" class="link">August 2023</a><br>
+                    <a href="" class="link">May 2023</a><br>
+                    <a href="" class="link">March 2023</a><br>
+                    <a href="" class="link">July 2023</a><br>
+                </div>
+            </div>
+            <div class="elsewhere">
+                <h1 class="elsewhere-title">Elsewhere</h1>
+                <a href="https://github.com/" class="link">GitHub</a><br>
+                <a href="https://x.com/indichainzz?t=SH4nKURpE9urbrQ_gybOyA&s=08" class="link">Twitter</a><br>
+                <a href="https://www.linkedin.com/in/deepesh-kamble-1103231a0/" class="link">Linkedin</a><br>
+                <a href="https://www.instagram.com/indichainzz.music/" class="link">Instagram</a><br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

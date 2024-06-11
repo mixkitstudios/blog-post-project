@@ -1,0 +1,87 @@
+.banner-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 30);
+    color: white;
+    padding: 50px 100px 100px 100px;
+    margin: 0 50px 30px 50px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.ban-img {
+    height: 400px;
+    width: 450px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.banner-title {
+    font-size: 64px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.banner-description {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.banner-continue {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 1240px) {
+    .banner-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        margin: 20px;
+    }
+
+    .ban-img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner-title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .banner-description {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner-content {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+    }
+
+    .banner-continue {
+        font-size: 16px;
+    }
+}

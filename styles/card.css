@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-content {
+    font-family: Arial, sans-serif;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.thumbnail {
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.card-topic {
+    color: rgb(43, 165, 209);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.date {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.card-description {
+    font-size: 14px;
+}
+
+.card-author {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.continue {
+    color: rgb(67, 178, 158);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        margin-left: 50px;
+        gap: 30px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin-left: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 5px;
+        margin-right: 0;
+    }
+
+    .card-topic {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .date {
+        font-size: 10px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+    .card-author {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .continue {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+}
